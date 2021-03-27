@@ -1,0 +1,1 @@
+npm i discord.js@11.6.3 && npm i fs && npm i colors 
