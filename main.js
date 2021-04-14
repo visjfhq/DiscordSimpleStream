@@ -13,22 +13,5 @@ client.on("ready", async() => {
     client.user.setStatus('online')
 })
 
-client.on("guildCreate", guild => {
-    console.log(`[INFO]`.green + ` Vous avez rejoint `.white + `${guild.name}`.green)
-})
-
-client.on("guildDelete", guild => {
-    console.log(`[INFO]`.red + ` Vous avez quitté `.white + `${guild.name}`.red)
-})
-
-client.on("messageDelete", message => {
-    let chanName;
-    if(message.channel.type == 'dm'){
-        chanName = 'DM'
-    } else {
-        chanName = message.guild.name
-    }
-  console.log(`[INFO]`.red + ` Message delete dans:`.white + ` ${chanName}`.red + `\n Contenu du message supprimé: `.white + `${message.content}`.red + `\n Auteur du message supprimé: `.white + `${message.author.username}`.red)
-})
 
 client.login(token)
