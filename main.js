@@ -8,7 +8,7 @@ const client = new Discord.Client()
 
 
 client.on("ready", async() => {
-    console.log(`[INFO]`.green + ` Le stream`.white + ` a commencé.`.green + `\n Discord Simple Stream Tool by`.white +  ` "0x38" Noro`.red + ` & `.white + `Lowki`.red)
+    console.log(`[INFO]`.green + ` Le stream`.white + ` a commencé.`.green + `\n Discord Simple Stream Tool by`.white +  ` "0x38" Noro`.red + ` & `.white + `sp33k`.red)
     client.user.setActivity(status, {type: 'STREAMING', url: url})
     client.user.setStatus('online')
 })
